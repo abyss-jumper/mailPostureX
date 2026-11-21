@@ -1,0 +1,31 @@
+{
+  "queries": {
+    "example.org|TXT": [
+      "v=spf1 include:_spf.example.org -all"
+    ],
+    "_spf.example.org|TXT": [
+      "v=spf1 ip4:192.0.2.0/24 -all"
+    ],
+    "example.org|MX": [
+      "10 mail.example.org."
+    ],
+    "mail.example.org|A": [
+      "192.0.2.10"
+    ],
+    "_dmarc.example.org|TXT": [
+      "v=DMARC1; p=reject; sp=reject; pct=100; adkim=s; aspf=s; rua=mailto:dmarc@example.org"
+    ],
+    "default._domainkey.example.org|TXT": [
+      "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMD/7wIDAQAB"
+    ],
+    "_mta-sts.example.org|TXT": [
+      "v=STSv1; id=20260101T000000"
+    ],
+    "_smtp._tls.example.org|TXT": [
+      "v=TLSRPTv1; rua=mailto:tlsrpt@example.org"
+    ]
+  },
+  "ad": [
+    "example.org"
+  ]
+}

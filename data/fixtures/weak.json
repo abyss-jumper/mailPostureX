@@ -1,0 +1,53 @@
+{
+  "queries": {
+    "example.com|TXT": [
+      "\"v=spf1 include:_spf1.example.com include:_spf2.example.com include:_spf3.example.com include:_spf4.example.com include:_spf5.example.com include:_spf6.example.com include:_spf7.example.com include:_sp\" \"f8.example.com include:_spf9.example.com include:_spf10.example.com include:_spf11.example.com ~all\""
+    ],
+    "example.com|MX": [
+      "10 mail.example.com."
+    ],
+    "mail.example.com|A": [
+      "192.0.2.25"
+    ],
+    "_dmarc.example.com|TXT": [
+      "v=DMARC1; p=none; rua=mailto:dmarc@example.com; pct=50"
+    ],
+    "default._domainkey.example.com|TXT": [
+      "v=DKIM1; k=rsa; t=y; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMD/7wIDAQAB"
+    ],
+    "_spf1.example.com|TXT": [
+      "v=spf1 ip4:203.0.113.1 -all"
+    ],
+    "_spf2.example.com|TXT": [
+      "v=spf1 ip4:203.0.113.2 -all"
+    ],
+    "_spf3.example.com|TXT": [
+      "v=spf1 ip4:203.0.113.3 -all"
+    ],
+    "_spf4.example.com|TXT": [
+      "v=spf1 ip4:203.0.113.4 -all"
+    ],
+    "_spf5.example.com|TXT": [
+      "v=spf1 ip4:203.0.113.5 -all"
+    ],
+    "_spf6.example.com|TXT": [
+      "v=spf1 ip4:203.0.113.6 -all"
+    ],
+    "_spf7.example.com|TXT": [
+      "v=spf1 ip4:203.0.113.7 -all"
+    ],
+    "_spf8.example.com|TXT": [
+      "v=spf1 ip4:203.0.113.8 -all"
+    ],
+    "_spf9.example.com|TXT": [
+      "v=spf1 ip4:203.0.113.9 -all"
+    ],
+    "_spf10.example.com|TXT": [
+      "v=spf1 ip4:203.0.113.10 -all"
+    ],
+    "_spf11.example.com|TXT": [
+      "v=spf1 ip4:203.0.113.11 -all"
+    ]
+  },
+  "ad": []
+}
