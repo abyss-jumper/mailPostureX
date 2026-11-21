@@ -1,10 +1,10 @@
 # mailposture
 
 Audit a domain's email security posture from the outside: SPF, DMARC, DKIM key
-hygiene, MX routing, MTA-STS, TLS-RPT, DANE and DNSSEC — in one command, with a
+hygiene, MX routing, MTA-STS, TLS-RPT, DANE and DNSSEC in one command, with a
 grade and an explanation for every point lost.
 
-Zero dependencies. DNS goes over **DoH** (DNS-over-HTTPS), so it works from
+Zero dependencies. DNS goes over **DoH** (DNS-over-HTTPS) so it works from
 locked-down CI runners and containers where outbound UDP/53 is blocked. Nothing
 is resolved in the clear.
 
@@ -159,14 +159,3 @@ tools/make_fixtures.py
 python -m unittest discover -s tests -v
 python tools/make_fixtures.py
 ```
-
-## What this does *not* do
-
-- No port 25 probing, no SMTP banner or STARTTLS test.
-- No DMARC report ingestion or alignment simulation.
-- No DKIM signature verification of a real message.
-- Does not test whether SPF would actually pass for a given sender IP.
-
-## License
-
-MIT. See `LICENSE`.
