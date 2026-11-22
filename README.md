@@ -1,5 +1,7 @@
 # mailposture
 
+
+![mailPosture](security.png)
 Audit a domain's email security posture from the outside: SPF, DMARC, DKIM key
 hygiene, MX routing, MTA-STS, TLS-RPT, DANE and DNSSEC in one command, with a
 grade and an explanation for every point lost.
