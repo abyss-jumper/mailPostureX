@@ -42,7 +42,7 @@ SPF DNS lookups  11/10   void 0/2
 ## Install
 
 ```bash
-git clone https://github.com/YOURNAME/mailposture
+git clone https://github.com/abyss-jumper/mailpostureX
 cd mailposture
 python -m pip install -e .
 mailposture example.com           # live audit
@@ -68,7 +68,7 @@ Exit codes: `0` audited, `1` below `--min-grade`, `2` usage or transport failure
 ### CI gate
 
 ```yaml
-- run: pip install git+https://github.com/YOU/mailposture
+- run: pip install git+https://github.com/abyss-jumper/mailpostureX
 - run: mailposture example.com --min-grade B --format json --out audit.json
 - run: cat audit.json
 ```
