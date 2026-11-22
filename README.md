@@ -1,7 +1,5 @@
 # mailposture
 
-![mailPosture](security.png)
-
 Audit a domain's email security posture from the outside: SPF, DMARC, DKIM key
 hygiene, MX routing, MTA-STS, TLS-RPT, DANE and DNSSEC in one command, with a
 grade and an explanation for every point lost.
@@ -9,6 +7,8 @@ grade and an explanation for every point lost.
 Zero dependencies. DNS goes over **DoH** (DNS-over-HTTPS) so it works from
 locked-down CI runners and containers where outbound UDP/53 is blocked. Nothing
 is resolved in the clear.
+
+![mailPosture](security.png)
 
 ```text
 $ mailposture example.com --demo weak
