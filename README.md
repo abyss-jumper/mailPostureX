@@ -45,7 +45,7 @@ SPF DNS lookups  11/10   void 0/2
 
 ```bash
 git clone https://github.com/abyss-jumper/mailpostureX
-cd mailposture
+cd mailpostureX
 python -m pip install -e .
 mailposture example.com           # live audit
 mailposture example.com --demo weak   # offline, uses a bundled fixture
